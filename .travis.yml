@@ -1,0 +1,19 @@
+os: linux
+language: node_js
+node_js:
+  - stable
+cache:
+  directories:
+    - node_modules
+script:
+  - yarn test
+  - yarn build
+env:
+  global:
+    - REACT_APP_API_ENDPOINT=https://still-headland-30261.herokuapp.com/graphql
+    - REACT_APP_NODE_ENV=production
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
