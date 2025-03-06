@@ -1,0 +1,13 @@
+.dialog {
+  background-color: #9a9a9a;
+  flex-direction: column;
+  height: 220px;
+  position: relative;
+  width: 396px;
+  align-self: end;
+  justify-self: center;
+
+  label {
+    display: block;
+  }
+}

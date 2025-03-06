@@ -1,0 +1,55 @@
+{
+  "folders": [
+    {
+      "name": "web-app",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/*.code-search": true
+    },
+    "editor.stickyScroll.enabled": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.replaceWithRegister": true,
+    "vim.easymotion": true,
+    "vim.gdefault": true,
+    "files.exclude": {
+      "**/node_modules": true
+    },
+    "explorer.excludeGitIgnore": false,
+    "search.useIgnoreFiles": true,
+    "vim.foldfix": true,
+    "vim.shell": "/bin/zsh",
+    "vim.sneak": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.enabledFileTypes": {
+      "*": false
+    },
+    "typescript.suggest.enabled": true,
+    "javascript.suggest.enabled": true,
+    "javascript.suggestionActions.enabled": true,
+    "typescript.suggestionActions.enabled": true
+  },
+  "extensions": {},
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Generate",
+        "type": "process",
+        "args": ["generate"],
+        "command": "yarn",
+        "problemMatcher": []
+      }
+    ]
+  }
+}
