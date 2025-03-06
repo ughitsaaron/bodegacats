@@ -1,0 +1,26 @@
+.upload {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(176, 176, 176, 0.5);
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ccc;
+  }
+
+  &:active {
+    background-color: #aaa;
+  }
+}
