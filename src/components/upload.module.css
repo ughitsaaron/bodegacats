@@ -1,0 +1,22 @@
+.backdrop {
+  position: absolute;
+  z-index: 0;
+  width:100%;
+  height:100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.dialog {
+  position: relative;
+  width:396px
+}
+
+.dialog dialog {
+  background: #e9e9e9;
+}
+
